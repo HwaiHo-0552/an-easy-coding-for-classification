@@ -1,4 +1,4 @@
-# a-easy-coding-for-classification
+# an-easy-coding-for-classification
 一个非常简单的分类识别code, 可以玩玩, 练练手
 
 machie_learning_dataset.py          进行数据处理和特征提取.
