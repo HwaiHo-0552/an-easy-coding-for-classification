@@ -34,7 +34,7 @@ class dataset:
 
     # 利用灰度共生矩阵, 对图像进行纹理特征提取
     def calculation(self, image_list):                              
-        scores = {}                                                 # 用于存放 灰度共生矩阵(GCLM) 的'dissimilarity','homogeneity'.. 等 计算值 
+        scores = {}                                                 # 用于存放 灰度共生矩阵(GLCM) 的'dissimilarity','homogeneity'.. 等 计算值 
         for img_name in image_list:
             image_pth = os.path.join(self.img_pth, img_name)
             image = io.imread(image_pth)
