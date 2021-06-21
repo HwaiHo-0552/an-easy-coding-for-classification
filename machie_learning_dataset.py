@@ -46,13 +46,13 @@ class dataset:
 
     # 将计算统计结果, 作为特征, 保存写入txt中
     def saved_dataset(self, dict_feature, dict_labels):                    
-        for content in dict_feature:                               # dict_feature 是一个字典dict, key是image name, value是一个列表list存放GCLM计算统计的值
+        for content in dict_feature:                               # dict_feature 是一个字典dict, key是image name, value是一个列表list存放GLCM计算统计的值
             for img_name in dict_labels:                           # dict_labels 是image name对应的Ground truth(GT)
                 if content==img_name:
                     dict_feature[content].append(dict_labels[img_name])   # 添加GT信息至, dict_feature中value里
 
         # 将包含GCLM计算统计值、GT信息的dict_feature内容, 保存写入txt中
-        saved_pth = os.path.join('V:\\Coding\\machine_learning', 'predict_dataset.txt')
+        saved_pth = os.path.join('V:\\Coding\\machine_learning', 'predict_dataset.txt')                 # 这里需要改为对应的生成txt的文件名
         txt_file = open(saved_pth, 'w', encoding='UTF-8')
         for i in dict_feature:
             for index in range(0, len(dict_feature[i])):
