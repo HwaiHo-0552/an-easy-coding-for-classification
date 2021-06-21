@@ -11,3 +11,6 @@ recognition.py                      进行分类识别
 分类器也可以更换为其他classifier.
 
 metric也可以更改为sklearn中其他的计算公式.
+
+练习数据放在machine_learning中, 数据量很少，仅供测试.
+整体算法也未优化，特别是传统特征提取没有优化.
